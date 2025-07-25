@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Email Generator</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Email Generator App</h1>
+
+    <label for="leaveType">Select Leave Type:</label>
+    <select id="leaveType">
+      <option value="sick leave">Sick Leave</option>
+      <option value="casual leave">Casual Leave</option>
+    </select>
+
+    <textarea id="promptInput" placeholder="Enter your reason..."></textarea>
+
+    <button onclick="generateEmail()">Generate Email</button>
+
+    <h2>Generated Email:</h2>
+    <pre id="outputArea"></pre>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
